@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`${isLightMode ? 'bg-white text-black' : 'bg-gray-800 text-white'} bg-slate-400 p-4`}>
+    <nav className={`${isLightMode ? 'bg-white text-black' : 'bg-gray-800 text-white'} p-4`}>
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-lg font-bold">
           <Link href="/">
@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-4">
           <Link href="/" className={`${isLightMode ? 'text-black' : 'text-gray-300'} hover:text-white`}>Home</Link>
           <Link href="/about" className={`${isLightMode ? 'text-black' : 'text-gray-300'} hover:text-white`}>About</Link>
-          <button onClick={toggleTheme} className={`${isLightMode ? 'text-black'  : ''}`}>
+          <button onClick={toggleTheme} className={`${isLightMode ? 'text-black' : 'text-white'}`}>
             {isLightMode ? 'Dark Mode' : 'Light Mode'}
           </button>
         </div>
